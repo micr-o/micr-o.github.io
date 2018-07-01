@@ -1,4 +1,132 @@
 <header>
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,600');
+
+:root {
+  --background: rgba(250, 0, 0, 0.45);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Raleway', Raleway;
+	font-weight: 600;
+}
+
+.content {
+  height: 200vh;
+  background-color: #333;
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+/* navigation styles start here */
+
+header {
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+nav a {
+  color: grey;
+  text-decoration: none;
+  font-size: 1.6rem;
+  opacity: 1;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: #07387A;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+  
+  .logo {
+    grid-column: 2 / 3;
+  }
+  
+  nav {
+    all: unset;
+    grid-column: 3 / 4;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  nav li {
+    margin-left: 10em;
+    margin-bottom: 0;
+  }
+  
+  nav a {
+    opacity: 1;
+  }
+  
+  }
+}
   <h1 class="logo"></h1>
   <input type="checkbox" id="nav-toggle" class="nav-toggle">
   <nav>
