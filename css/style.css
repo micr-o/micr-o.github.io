@@ -8,17 +8,18 @@ body{
   overflow: hidden;
   background-color: #333;
 }
-#navdiv li{
-  float: left;
-}
-
 #navdiv li a{
+  float: right;
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 25px 35px;
   text-decoration: none;
 }
 #navdiv li a:hover {
     background-color: #111;
+}
+#navdiv logo {
+    float: left;
+    padding: 10px 20px;
 }
