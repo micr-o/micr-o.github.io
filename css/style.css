@@ -1,31 +1,20 @@
 body{
-  font-family: 'Francois One', sans-serif;
+  font-family: 'Barlow', sans-serif;
+  background-color: #36383F;
+   margin: 0;
+
 }
-#navdiv ul{
+#header{
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #000000;
+  background-color: #BC4D4D;
+  width: 1360px;
+  height: 90px;
 }
-#navdiv li a{
-    width: 60px;
-  float: right;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 32px 35px;
-  text-decoration: none;
-}
-#navdiv li a:hover {
-    background-color: #ffffff;
-	color: black; 
-}
-#navdiv logo {
-    float: left;
-    padding: 0px 45px;
-}
-#navdiv socials {
-    float: left;
-    padding: 5px 15px;
+#header ul{
+    text-align: center;
+    font-size:25px;
+    color:white;
 }
