@@ -8,8 +8,7 @@ body{
   list-style-type: none;
   text-align:center;
   margin: 0;
-  width:1360px;
-  height:84px;
+  padding: 0;
   overflow: hidden;
   background-color: #BC4D4D;
 }
