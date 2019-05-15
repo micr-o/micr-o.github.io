@@ -12,12 +12,21 @@ body{
   overflow: hidden;
   background-color: #C70010;
 }
-#header ul{
+#header ul b {
    font-size: 2em;
    text-align: center;
    color:white;
    position: relative;
    bottom:.35em;
+  
+    
+}
+#header ul {
+   font-size: 2em;
+   text-align: center;
+   color:white;
+   position: relative;
+   bottom:.37em;
   
     
 }
@@ -30,7 +39,7 @@ body{
     cursor: pointer;
     background:none;
     font-size: 2.75em;
-    bottom:.3em;
+    bottom:.2em;
 
 }
 
